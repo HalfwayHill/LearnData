@@ -15,6 +15,8 @@ namespace LearnData
 {
     class Program
     {
+        #region 测试函数
+
         /// <summary>
         /// 比较数组栈和链表栈的性能（使用接口来进行方法扩展）
         /// </summary>
@@ -88,6 +90,9 @@ namespace LearnData
             t.Stop();
             return t.ElapsedMilliseconds;
         }
+
+        #endregion
+
         static void Main(string[] args)
         {
 
