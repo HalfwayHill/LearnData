@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zS+8fJn/VT+lf7d9Wk7VxZifLqQj2VnR5RgoGiru5gNdNzCz8cBZHNhbiV3l+27U8FCFzAMSmz/YT9woWu8/UA==",
+  "dgSpecHash": "LRNDJNMIC/WXFNDKK4jeP/htYNEXEwBcnB8Jw9B75/w8OpBOX/25cTyEkaWNEPz7b0gNnOmEjsCTiU4VierbEg==",
   "success": true,
-  "projectFilePath": "E:\\Code\\Mine\\LearnData\\Sorting\\Sorting.csproj",
+  "projectFilePath": "E:\\Code\\LearnData\\Sorting\\Sorting.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

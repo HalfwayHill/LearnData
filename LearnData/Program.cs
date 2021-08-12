@@ -1,6 +1,7 @@
 ﻿using LearnData.Algorithm;
 using LearnData.MyArray;
 using LearnData.MyDictionary;
+using LearnData.MyHeap;
 using LearnData.MyLinkedList;
 using LearnData.MyQueue;
 using LearnData.MySet;
@@ -10,6 +11,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
+using Sorting;
 
 namespace LearnData
 {
@@ -867,7 +870,7 @@ namespace LearnData
 
             #region 比较三种映射(根据链表和、根据有序数组和根据二叉树)的性能
 
-            
+            /*
 
             Console.WriteLine("Article");
 
@@ -875,7 +878,7 @@ namespace LearnData
             Console.WriteLine("词汇量总数："+words.Count);
 
             Console.WriteLine();
-            /*
+            
 
             Console.WriteLine("链表字典");
             LinkedList3Dictionary<string,int> dic1 = new LinkedList3Dictionary<string, int>();
@@ -902,7 +905,7 @@ namespace LearnData
             Console.WriteLine("C#中的红黑树字典");
             SortedDictionary<string, int> dic4 = new SortedDictionary<string, int>();
 
-            */
+           
 
             Console.WriteLine("（基于二叉查找树实现）字典");
             BST2Dictionary<string, int> dic1 = new BST2Dictionary<string, int>();
@@ -912,6 +915,8 @@ namespace LearnData
             Console.WriteLine("运行时间： " + t1 + "ms");
 
             Console.WriteLine();
+
+             */
 
             #endregion
 
@@ -969,7 +974,71 @@ namespace LearnData
 
             #endregion
 
+            #region 测试最大堆
 
+            /*
+
+            /////////////////////////////////////////////////////////////////////////
+            // 3      3          3              5               5            4     //
+            //      /          /   \          /   \           /   \        /   \   //
+            //     2          2     1        3     1         4     1      3     1  //
+            //                              /               / \          /         // 
+            //                             2               2   3        2          // 
+            /////////////////////////////////////////////////////////////////////////
+
+            MaxHeap<int> maxHeap = new MaxHeap<int>();
+            int[] a = { 3, 2, 1, 5, 4 };
+            for (int i = 0; i < a.Length; i++)
+            {
+                maxHeap.Insert(a[i]);
+                Console.WriteLine(maxHeap);
+            }
+
+            maxHeap.RemoveMax();
+            Console.WriteLine(maxHeap);
+
+            */
+
+            #endregion
+
+            #region 优先队列使用场景
+
+            /**/
+            //最小优先队列和最大优先队列都是C#中没有提供，但是却很实用的数据结构。
+            //查找1百万中最小或最大的10个 N:1000000  M:10
+            //排序 时间复杂度 O(NLogN) 空间复杂度O(N)
+            //优先队列 时间复杂度 O(MLogM) 空间复杂度O(M)
+            //对于这种问题 数据量越大 优先队列优势越大
+
+
+            //第一种：排序算法
+            int[] a = TestSearch.ReadFile("TestFile/TopM.txt");
+            QuickSort3.Sort(a);
+            for (int i = 0; i < 10; i++)
+                Console.Write(a[i]+", ");
+
+            Console.WriteLine();
+
+            //第二种：优先队列
+            MaxPQ<int> pq = new MaxPQ<int>(10);
+            FileStream fs = new FileStream("TestFile/TopM.txt", FileMode.Open);
+            StreamReader sr = new StreamReader(fs);
+            while (!sr.EndOfStream)
+            {
+                int value = int.Parse(sr.ReadLine());
+                if (pq.Count < 10)
+                    pq.Enqueue(value);
+                else if(value < pq.Peek())
+                {
+                    pq.Dequeue();
+                    pq.Enqueue(value);
+                }
+            }
+            Console.WriteLine(pq);
+
+            
+
+            #endregion
 
 
             Console.Read();

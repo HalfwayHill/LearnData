@@ -108,7 +108,7 @@ namespace Sorting
 
             #region 测试排序算法的性能
 
-            /**/
+            /*
 
             //数组规模大小
             int N = 1000000;
@@ -146,6 +146,49 @@ namespace Sorting
             //时间复杂度都为O(n^2) 所以对于大量数据的排序还是太慢
             //优化前归并排序：随机数组18ms 近乎有序数组11ms 时间复杂度O(NLogN) 趋紧于O(N)
             //优化后的归并排序和三向切分快速排序，时间效率上是差不多的，但归并排序的空间效率是差的，因为它要有个过渡数组
+
+            */
+
+            #endregion
+
+            #region 测试最大堆代码
+
+            /**/
+
+            int N = 1000000;
+
+            Console.WriteLine("测试随机数组： ");
+            int[] a = TestHelper.RandomArray(N, N);
+            int[] b = TestHelper.CopyArray(a);
+            int[] c = TestHelper.CopyArray(a);
+            int[] d = TestHelper.CopyArray(a);
+            TestHelper.TestSort("QuickSort3", a);
+            TestHelper.TestSort("MergeSort2", b);
+            TestHelper.TestSort("HeapSort1", c);
+            TestHelper.TestSort("HeapSort2", d);
+
+            Console.WriteLine();
+
+            Console.WriteLine("测试近乎有序数组： ");
+            a = TestHelper.NearlyOrderedArray(N, 100);
+            b = TestHelper.CopyArray(a);
+            c = TestHelper.CopyArray(a);
+            d = TestHelper.CopyArray(a);
+            TestHelper.TestSort("QuickSort3", a);
+            TestHelper.TestSort("MergeSort2", b);
+            TestHelper.TestSort("HeapSort1", c);
+            TestHelper.TestSort("HeapSort2", d);
+            Console.WriteLine();
+
+            Console.WriteLine("测试大量重复元素数组： ");
+            a = TestHelper.RandomArray(N, 10);
+            b = TestHelper.CopyArray(a);
+            c = TestHelper.CopyArray(a);
+            d = TestHelper.CopyArray(a);
+            TestHelper.TestSort("QuickSort3", a);
+            TestHelper.TestSort("MergeSort2", b);
+            TestHelper.TestSort("HeapSort1", c);
+            TestHelper.TestSort("HeapSort2", d);
 
 
 

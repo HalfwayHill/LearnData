@@ -12,7 +12,7 @@ namespace Sorting
      * 
      * 优化方法是，忽略重复数据
      */
-    class QuickSort3
+    public class QuickSort3
     {
 
         //随机类全局变量，不能写在方法内作为局部变量。
