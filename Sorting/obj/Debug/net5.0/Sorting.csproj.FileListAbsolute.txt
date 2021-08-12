@@ -1,0 +1,16 @@
+E:\Code\Mine\LearnData\Sorting\bin\Debug\net5.0\Sorting.exe
+E:\Code\Mine\LearnData\Sorting\bin\Debug\net5.0\Sorting.deps.json
+E:\Code\Mine\LearnData\Sorting\bin\Debug\net5.0\Sorting.runtimeconfig.json
+E:\Code\Mine\LearnData\Sorting\bin\Debug\net5.0\Sorting.runtimeconfig.dev.json
+E:\Code\Mine\LearnData\Sorting\bin\Debug\net5.0\Sorting.dll
+E:\Code\Mine\LearnData\Sorting\bin\Debug\net5.0\ref\Sorting.dll
+E:\Code\Mine\LearnData\Sorting\bin\Debug\net5.0\Sorting.pdb
+E:\Code\Mine\LearnData\Sorting\obj\Debug\net5.0\Sorting.csprojAssemblyReference.cache
+E:\Code\Mine\LearnData\Sorting\obj\Debug\net5.0\Sorting.GeneratedMSBuildEditorConfig.editorconfig
+E:\Code\Mine\LearnData\Sorting\obj\Debug\net5.0\Sorting.AssemblyInfoInputs.cache
+E:\Code\Mine\LearnData\Sorting\obj\Debug\net5.0\Sorting.AssemblyInfo.cs
+E:\Code\Mine\LearnData\Sorting\obj\Debug\net5.0\Sorting.csproj.CoreCompileInputs.cache
+E:\Code\Mine\LearnData\Sorting\obj\Debug\net5.0\Sorting.dll
+E:\Code\Mine\LearnData\Sorting\obj\Debug\net5.0\ref\Sorting.dll
+E:\Code\Mine\LearnData\Sorting\obj\Debug\net5.0\Sorting.pdb
+E:\Code\Mine\LearnData\Sorting\obj\Debug\net5.0\Sorting.genruntimeconfig.cache
