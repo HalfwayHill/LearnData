@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearnData", "LearnData\LearnData.csproj", "{223D23CD-0A65-4B88-9725-D82C750095A1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "Sorting\Sorting.csproj", "{D686F15D-7AB1-4225-BAA8-3FA4F061D20E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sorting", "Sorting\Sorting.csproj", "{D686F15D-7AB1-4225-BAA8-3FA4F061D20E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph", "Graph\Graph.csproj", "{3F8E54CE-8823-44A0-9BBD-417A9B4A11B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D686F15D-7AB1-4225-BAA8-3FA4F061D20E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D686F15D-7AB1-4225-BAA8-3FA4F061D20E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D686F15D-7AB1-4225-BAA8-3FA4F061D20E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F8E54CE-8823-44A0-9BBD-417A9B4A11B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F8E54CE-8823-44A0-9BBD-417A9B4A11B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F8E54CE-8823-44A0-9BBD-417A9B4A11B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F8E54CE-8823-44A0-9BBD-417A9B4A11B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
