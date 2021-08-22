@@ -8,13 +8,25 @@
   <ItemGroup>
     <None Remove="TestFile\FirstGraph.jpg" />
     <None Remove="TestFile\FirstGraph.txt" />
+    <None Remove="TestFile\图的二分检测\g4.png" />
+    <None Remove="TestFile\图的二分检测\g4.txt" />
     <None Remove="TestFile\图的深度优先遍历\g.jpg" />
     <None Remove="TestFile\图的深度优先遍历\g.txt" />
     <None Remove="TestFile\图的深度优先遍历\g2.jpg" />
     <None Remove="TestFile\图的深度优先遍历\g2.txt" />
+    <None Remove="TestFile\图的深度优先遍历\g3.jpg" />
+    <None Remove="TestFile\图的深度优先遍历\g3.txt" />
+    <None Remove="TestFile\图的环检测\g3.jpg" />
+    <None Remove="TestFile\图的环检测\g3.txt" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="TestFile\图的二分检测\g4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFile\图的二分检测\g4.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="TestFile\图的存储\FirstGraph.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -31,6 +43,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="TestFile\图的深度优先遍历\g2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFile\图的环检测\g3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFile\图的环检测\g3.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

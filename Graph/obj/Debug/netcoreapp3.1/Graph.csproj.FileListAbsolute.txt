@@ -17,3 +17,7 @@ E:\Code\LearnData\Graph\bin\Debug\netcoreapp3.1\TestFile\图的深度优先遍�
 E:\Code\LearnData\Graph\bin\Debug\netcoreapp3.1\TestFile\图的深度优先遍历\g.txt
 E:\Code\LearnData\Graph\bin\Debug\netcoreapp3.1\TestFile\图的深度优先遍历\g2.jpg
 E:\Code\LearnData\Graph\bin\Debug\netcoreapp3.1\TestFile\图的深度优先遍历\g2.txt
+E:\Code\LearnData\Graph\bin\Debug\netcoreapp3.1\TestFile\图的二分检测\g4.png
+E:\Code\LearnData\Graph\bin\Debug\netcoreapp3.1\TestFile\图的二分检测\g4.txt
+E:\Code\LearnData\Graph\bin\Debug\netcoreapp3.1\TestFile\图的环检测\g3.jpg
+E:\Code\LearnData\Graph\bin\Debug\netcoreapp3.1\TestFile\图的环检测\g3.txt

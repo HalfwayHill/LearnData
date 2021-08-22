@@ -5,6 +5,18 @@ using System.Collections.Generic;
 
 namespace Graph
 {
+    /* 二分图
+     * 二分图又称作二部图，是图论中的一种特殊模型。 
+     * 设G=(V,E)是一个无向图，如果顶点V可分割为两个互不相交的子集(A,B)，
+     * 并且图中的每条边（i，j）所关联的两个顶点i和j
+     * 分别属于这两个不同的顶点集(i in A,j in B)，
+     * 则称图G为一个二分图。
+     * 
+     * 简而言之，就是顶点集V可分割为两个互不相交的子集，
+     * 并且图中每条边依附的两个顶点都分属于这两个互不相交的子集，
+     * 两个子集内的顶点不相邻。
+     */
+
     class Program
     {
         static void Main(string[] args)
@@ -142,11 +154,32 @@ namespace Graph
 
             #region 深度优先遍历
 
-            IGraph graph = new AdjLinkedList(@"./TestFile/图的深度优先遍历/g.txt");
+            
+
+            IGraph graph = new AdjLinkedList(@"./TestFile/图的深度优先遍历/g2.txt");
             DFSGraph dfs = new DFSGraph(graph);
+            IGraph graph3 = new AdjLinkedList(@"./TestFile/图的环检测/g3.txt");
+            DFSGraph dfs3 = new DFSGraph(graph3);
             Console.Write(dfs.GetList());
+            Console.WriteLine($" Graph联通分量:{dfs.Component()}");
+
+            //单源路径
+            //DFSGraph dfsSingleSourcePath = new DFSGraph(graph, 0);
+            //Console.WriteLine($" 0 -> 6:{dfsSingleSourcePath.Path(6)}");
+            //Console.WriteLine($" 0 -> 5:{dfsSingleSourcePath.Path(5)}");
+            //Console.WriteLine($" 0 -> 4:{dfsSingleSourcePath.Path(4)}");
+
+            Console.WriteLine($"图2是否存在环:{dfs.HasCycle()}");
+            Console.WriteLine($"图3是否存在环:{dfs3.HasCycle()}");
+
+            Console.WriteLine($"测试二分图");
+            IGraph graph4 = new AdjLinkedList(@"./TestFile/图的二分检测/g4.txt");
+            DFSBipartiteDetection dfs41 = new DFSBipartiteDetection(graph);
+            DFSBipartiteDetection dfs42 = new DFSBipartiteDetection(graph4);
 
 
+            Console.WriteLine($"图2二分图检测:{dfs41.IsBipartite()}");
+            Console.WriteLine($"图4二分图检测:{dfs42.IsBipartite()}");
 
             #endregion
 
