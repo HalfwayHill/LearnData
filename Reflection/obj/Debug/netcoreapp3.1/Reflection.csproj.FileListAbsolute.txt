@@ -1,0 +1,16 @@
+E:\Code\LearnData\Reflection\bin\Debug\netcoreapp3.1\Reflection.exe
+E:\Code\LearnData\Reflection\bin\Debug\netcoreapp3.1\Reflection.deps.json
+E:\Code\LearnData\Reflection\bin\Debug\netcoreapp3.1\Reflection.runtimeconfig.json
+E:\Code\LearnData\Reflection\bin\Debug\netcoreapp3.1\Reflection.runtimeconfig.dev.json
+E:\Code\LearnData\Reflection\bin\Debug\netcoreapp3.1\Reflection.dll
+E:\Code\LearnData\Reflection\bin\Debug\netcoreapp3.1\Reflection.pdb
+E:\Code\LearnData\Reflection\obj\Debug\netcoreapp3.1\Reflection.csprojAssemblyReference.cache
+E:\Code\LearnData\Reflection\obj\Debug\netcoreapp3.1\Reflection.AssemblyInfoInputs.cache
+E:\Code\LearnData\Reflection\obj\Debug\netcoreapp3.1\Reflection.AssemblyInfo.cs
+E:\Code\LearnData\Reflection\obj\Debug\netcoreapp3.1\Reflection.csproj.CoreCompileInputs.cache
+E:\Code\LearnData\Reflection\obj\Debug\netcoreapp3.1\Reflection.dll
+E:\Code\LearnData\Reflection\obj\Debug\netcoreapp3.1\Reflection.pdb
+E:\Code\LearnData\Reflection\obj\Debug\netcoreapp3.1\Reflection.genruntimeconfig.cache
+E:\Code\LearnData\Reflection\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+E:\Code\LearnData\Reflection\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Code\LearnData\Reflection\obj\Debug\netcoreapp3.1\Reflection.csproj.CopyComplete

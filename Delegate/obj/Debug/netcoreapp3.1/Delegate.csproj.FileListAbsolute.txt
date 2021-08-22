@@ -1,0 +1,13 @@
+E:\Code\LearnData\Delegate\bin\Debug\netcoreapp3.1\Delegate.exe
+E:\Code\LearnData\Delegate\bin\Debug\netcoreapp3.1\Delegate.deps.json
+E:\Code\LearnData\Delegate\bin\Debug\netcoreapp3.1\Delegate.runtimeconfig.json
+E:\Code\LearnData\Delegate\bin\Debug\netcoreapp3.1\Delegate.runtimeconfig.dev.json
+E:\Code\LearnData\Delegate\bin\Debug\netcoreapp3.1\Delegate.dll
+E:\Code\LearnData\Delegate\bin\Debug\netcoreapp3.1\Delegate.pdb
+E:\Code\LearnData\Delegate\obj\Debug\netcoreapp3.1\Delegate.csprojAssemblyReference.cache
+E:\Code\LearnData\Delegate\obj\Debug\netcoreapp3.1\Delegate.AssemblyInfoInputs.cache
+E:\Code\LearnData\Delegate\obj\Debug\netcoreapp3.1\Delegate.AssemblyInfo.cs
+E:\Code\LearnData\Delegate\obj\Debug\netcoreapp3.1\Delegate.csproj.CoreCompileInputs.cache
+E:\Code\LearnData\Delegate\obj\Debug\netcoreapp3.1\Delegate.dll
+E:\Code\LearnData\Delegate\obj\Debug\netcoreapp3.1\Delegate.pdb
+E:\Code\LearnData\Delegate\obj\Debug\netcoreapp3.1\Delegate.genruntimeconfig.cache
