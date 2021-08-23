@@ -10,6 +10,8 @@
     <None Remove="TestFile\FirstGraph.txt" />
     <None Remove="TestFile\图的二分检测\g4.png" />
     <None Remove="TestFile\图的二分检测\g4.txt" />
+    <None Remove="TestFile\图的广度优先遍历\g.png" />
+    <None Remove="TestFile\图的广度优先遍历\g.txt" />
     <None Remove="TestFile\图的深度优先遍历\g.jpg" />
     <None Remove="TestFile\图的深度优先遍历\g.txt" />
     <None Remove="TestFile\图的深度优先遍历\g2.jpg" />
@@ -31,6 +33,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="TestFile\图的存储\FirstGraph.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFile\图的广度优先遍历\g.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestFile\图的广度优先遍历\g.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="TestFile\图的深度优先遍历\g.jpg">

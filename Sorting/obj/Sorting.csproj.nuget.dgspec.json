@@ -1,28 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Code\\Mine\\LearnData\\Sorting\\Sorting.csproj": {}
+    "E:\\Code\\LearnData\\Sorting\\Sorting.csproj": {}
   },
   "projects": {
-    "E:\\Code\\Mine\\LearnData\\Sorting\\Sorting.csproj": {
+    "E:\\Code\\LearnData\\Sorting\\Sorting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Code\\Mine\\LearnData\\Sorting\\Sorting.csproj",
+        "projectUniqueName": "E:\\Code\\LearnData\\Sorting\\Sorting.csproj",
         "projectName": "Sorting",
-        "projectPath": "E:\\Code\\Mine\\LearnData\\Sorting\\Sorting.csproj",
-        "packagesPath": "C:\\Users\\sj\\.nuget\\packages\\",
-        "outputPath": "E:\\Code\\Mine\\LearnData\\Sorting\\obj\\",
+        "projectPath": "E:\\Code\\LearnData\\Sorting\\Sorting.csproj",
+        "packagesPath": "C:\\Users\\nb\\.nuget\\packages\\",
+        "outputPath": "E:\\Code\\LearnData\\Sorting\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\sj\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\nb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -61,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

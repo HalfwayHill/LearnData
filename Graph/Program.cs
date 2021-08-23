@@ -1,4 +1,5 @@
 ﻿using Graph.Adjacency;
+using Graph.BFS;
 using Graph.DFS;
 using System;
 using System.Collections.Generic;
@@ -154,7 +155,7 @@ namespace Graph
 
             #region 深度优先遍历
 
-            
+            /*
 
             IGraph graph = new AdjLinkedList(@"./TestFile/图的深度优先遍历/g2.txt");
             DFSGraph dfs = new DFSGraph(graph);
@@ -181,8 +182,30 @@ namespace Graph
             Console.WriteLine($"图2二分图检测:{dfs41.IsBipartite()}");
             Console.WriteLine($"图4二分图检测:{dfs42.IsBipartite()}");
 
+            */
+
             #endregion
 
+            #region 广度优先遍历
+
+            //使用队列的出队入队的方式
+            //不是从一条路径走到低(深度)
+            //而是将当前顶点的未遍历相邻顶点入队
+            //然后再将出队的顶点设为当前顶点
+
+            //IGraph graph = new AdjLinkedList(@"./TestFile/图的广度优先遍历/g.txt");
+            //BFSGraph dfs = new BFSGraph(graph);
+            //Console.Write(dfs.GetList());
+
+            //联通分量
+            IGraph graph = new AdjLinkedList(@"./TestFile/图的广度优先遍历/g.txt");
+            BFSCC dfs = new BFSCC(graph);
+            IGraph graph2 = new AdjLinkedList(@"./TestFile/图的深度优先遍历/g2.txt");
+            BFSCC dfs2 = new BFSCC(graph2);
+            Console.WriteLine($" Graph联通分量:{dfs.Component()}");
+            Console.WriteLine($" Graph联通分量:{dfs2.Component()}");
+
+            #endregion
 
             Console.Read();
         }

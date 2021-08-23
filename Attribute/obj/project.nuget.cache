@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aTuTQC33FKqbPDDv5Fm/i8B4/AQ8cv+Bk+/srT4v+LRnZ3aNCji+SgXmBoxi3AMcPADXL1Yf0sCx2NdlZ84DUg==",
+  "dgSpecHash": "5M2DXMyAgEciWSPaGxr68FhR2ygB0SVAmiTnkJjP7iTgQmWnatqTbWHBFgRfn2EXsujn4WM4DabBeaeB7Lua1w==",
   "success": true,
-  "projectFilePath": "E:\\Code\\Mine\\LearnData\\Attribute\\LearnAttribute.csproj",
+  "projectFilePath": "E:\\Code\\LearnData\\Attribute\\LearnAttribute.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
