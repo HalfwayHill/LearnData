@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegate", "Delegate\Delega
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Event", "Event\Event.csproj", "{E78531BC-DA53-4F7B-BEAB-E0332C543A72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflection", "Reflection\Reflection.csproj", "{A5F89DD4-A073-4F02-8218-D86C70073722}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reflection", "Reflection\Reflection.csproj", "{A5F89DD4-A073-4F02-8218-D86C70073722}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearnAttribute", "Attribute\LearnAttribute.csproj", "{9A75BA37-B67A-4F95-9F70-82A0221954B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{A5F89DD4-A073-4F02-8218-D86C70073722}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5F89DD4-A073-4F02-8218-D86C70073722}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5F89DD4-A073-4F02-8218-D86C70073722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A75BA37-B67A-4F95-9F70-82A0221954B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A75BA37-B67A-4F95-9F70-82A0221954B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A75BA37-B67A-4F95-9F70-82A0221954B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A75BA37-B67A-4F95-9F70-82A0221954B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

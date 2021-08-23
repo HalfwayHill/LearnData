@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Code\\Mine\\LearnData\\Sorting\\Sorting.csproj": {}
+    "E:\\Code\\Mine\\LearnData\\Attribute\\LearnAttribute.csproj": {}
   },
   "projects": {
-    "E:\\Code\\Mine\\LearnData\\Sorting\\Sorting.csproj": {
+    "E:\\Code\\Mine\\LearnData\\Attribute\\LearnAttribute.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Code\\Mine\\LearnData\\Sorting\\Sorting.csproj",
-        "projectName": "Sorting",
-        "projectPath": "E:\\Code\\Mine\\LearnData\\Sorting\\Sorting.csproj",
+        "projectUniqueName": "E:\\Code\\Mine\\LearnData\\Attribute\\LearnAttribute.csproj",
+        "projectName": "LearnAttribute",
+        "projectPath": "E:\\Code\\Mine\\LearnData\\Attribute\\LearnAttribute.csproj",
         "packagesPath": "C:\\Users\\sj\\.nuget\\packages\\",
-        "outputPath": "E:\\Code\\Mine\\LearnData\\Sorting\\obj\\",
+        "outputPath": "E:\\Code\\Mine\\LearnData\\Attribute\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

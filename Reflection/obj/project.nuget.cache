@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "UbLriq4USjFd5n6cIyDKNdynSkNVOroLe8f2ry8sdghXksGGm0gqEsCHaJcICjRuu09rQJDYQyJKvkJQop9HZQ==",
+  "dgSpecHash": "YtTpho6ZU5u7jQR4MxmJ72W9fg6p/+EjDNdvub5Uis3rDbPASI2r4tD6SjvcF0D1c0f/nlXgpF6+Ym+MqFFXMQ==",
   "success": true,
-  "projectFilePath": "E:\\Code\\LearnData\\Reflection\\Reflection.csproj",
+  "projectFilePath": "E:\\Code\\Mine\\LearnData\\Reflection\\Reflection.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\nb\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
-    "C:\\Users\\nb\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+    "C:\\Users\\sj\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
+    "C:\\Users\\sj\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
