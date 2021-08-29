@@ -1,8 +1,10 @@
 ﻿using Graph.Adjacency;
 using Graph.BFS;
 using Graph.DFS;
+using Graph.UF;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace Graph
 {
@@ -18,8 +20,39 @@ namespace Graph
      * 两个子集内的顶点不相邻。
      */
 
-    class Program
+    class Program     
     {
+        /// <summary>
+        /// 测试并查集效率方法
+        /// </summary>
+        /// <param name="uf"></param>
+        /// <param name="m"></param>
+        /// <returns></returns>
+        private static long TestUF(IUF uf,int m)
+        {
+            int size = uf.GetSize();
+            Random r = new Random();
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
+
+            for (int i = 0; i < m; i++)
+            {
+                int a = r.Next(size);
+                int b = r.Next(size);
+                uf.Union(a, b);
+            }
+
+            for (int i = 0; i < m; i++)
+            {
+                int a = r.Next(size);
+                int b = r.Next(size);
+                uf.IsConnected(a, b);
+            }
+
+            sw.Stop();
+            return sw.ElapsedMilliseconds;
+        }
+
         static void Main(string[] args)
         {
             #region 多维数组
@@ -188,10 +221,15 @@ namespace Graph
 
             #region 广度优先遍历
 
+            /*
+
             //使用队列的出队入队的方式
             //不是从一条路径走到低(深度)
             //而是将当前顶点的未遍历相邻顶点入队
             //然后再将出队的顶点设为当前顶点
+
+            //深度优先遍历所取得的单源路径可能时随机的一条路径
+            //而广度优先遍历所取得的单源路径一定是最短路径
 
             //IGraph graph = new AdjLinkedList(@"./TestFile/图的广度优先遍历/g.txt");
             //BFSGraph dfs = new BFSGraph(graph);
@@ -199,11 +237,76 @@ namespace Graph
 
             //联通分量
             IGraph graph = new AdjLinkedList(@"./TestFile/图的广度优先遍历/g.txt");
-            BFSCC dfs = new BFSCC(graph);
+            BFSCC bFSCC = new BFSCC(graph);
             IGraph graph2 = new AdjLinkedList(@"./TestFile/图的深度优先遍历/g2.txt");
-            BFSCC dfs2 = new BFSCC(graph2);
-            Console.WriteLine($" Graph联通分量:{dfs.Component()}");
-            Console.WriteLine($" Graph联通分量:{dfs2.Component()}");
+            BFSCC bFSCC2 = new BFSCC(graph2);
+            Console.WriteLine($" Graph联通分量:{bFSCC.Component()}");
+            Console.WriteLine($" Graph联通分量:{bFSCC2.Component()}");
+
+            //单源路径
+            BFSSingleSourcePath bfsSingleSourcePath = new BFSSingleSourcePath(graph2, 0);
+            Console.WriteLine($" 0 -> 6:{bfsSingleSourcePath.Path(6)} 距离:{bfsSingleSourcePath.GetDis(6)}");
+            Console.WriteLine($" 0 -> 5:{bfsSingleSourcePath.Path(5)} 距离:{bfsSingleSourcePath.GetDis(5)}");
+            Console.WriteLine($" 0 -> 4:{bfsSingleSourcePath.Path(4)} 距离:{bfsSingleSourcePath.GetDis(4)}");
+
+            Console.WriteLine($"测试二分图");
+            IGraph graph4 = new AdjLinkedList(@"./TestFile/图的二分检测/g4.txt");
+            BFSBipartiteDetection dfs41 = new BFSBipartiteDetection(graph);
+            BFSBipartiteDetection dfs42 = new BFSBipartiteDetection(graph4);
+
+
+            Console.WriteLine($"图2二分图检测:{dfs41.IsBipartite()}");
+            Console.WriteLine($"图4二分图检测:{dfs42.IsBipartite()}");
+
+            Console.WriteLine($"环检测");
+
+            IGraph graph3 = new AdjLinkedList(@"./TestFile/图的环检测/g3.txt");
+
+            BFSCycleDetection dfsCycle1 = new BFSCycleDetection(graph);
+            BFSCycleDetection dfsCycle2 = new BFSCycleDetection(graph3);
+
+            Console.WriteLine($"图2是否存在环:{dfsCycle1.HasCycle()}");
+            Console.WriteLine($"图3是否存在环:{dfsCycle2.HasCycle()}");
+
+            Console.WriteLine($"非递归深度优先遍历");
+            IGraph dfsgraph = new AdjLinkedList(@"./TestFile/图的深度优先遍历/g2.txt");
+            DFSGraphS dfs = new DFSGraphS(dfsgraph);
+            DFSGraphNRS dfsNR = new DFSGraphNRS(dfsgraph);
+            Console.Write($"递归深度优先遍历{dfs.GetList()}");
+            Console.Write($"非递归深度优先遍历{dfsNR.GetList()}");
+
+            //递归深度优先遍历所得到的遍历数组其实为图的原始顶点从左开始
+            //非递归深度优先遍历由于栈的机制，导致为图的原始顶点的右边开始
+
+            */
+            #endregion
+
+            #region 并查集
+
+            /* 并查集
+             * 并查集可以高效地解决联通问题
+             * 可以快速查询两顶点(尤其解决大量顶点的图，两个很远的顶点)是否联通
+             * 我们也可以通过优先遍历查找两顶点是否联通，但这样太过低效
+             */
+
+            /*
+
+            int size = 100000;
+            int m = 10000;
+
+            UnionFind1 unionFind1 = new UnionFind1(size);
+            Console.WriteLine($"UnionFind1的时间: {TestUF(unionFind1, m)}ms");
+
+            UnionFind2 unionFind2 = new UnionFind2(size);
+            Console.WriteLine($"UnionFind1的时间: {TestUF(unionFind2, m)}ms");
+
+            */
+
+            /*
+             * size越大，UnionFind2优势约明显，
+             * 因为它使用的是树的形式，我们只需要考虑树的高度就行
+             * 而UnionFind1是全部遍历，对于数量越大效率越低
+             */
 
             #endregion
 
