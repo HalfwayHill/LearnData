@@ -23,3 +23,5 @@ E:\Code\LearnData\Graph\bin\Debug\netcoreapp3.1\TestFile\图的环检测\g3.jpg
 E:\Code\LearnData\Graph\bin\Debug\netcoreapp3.1\TestFile\图的环检测\g3.txt
 E:\Code\LearnData\Graph\bin\Debug\netcoreapp3.1\TestFile\图的广度优先遍历\g.png
 E:\Code\LearnData\Graph\bin\Debug\netcoreapp3.1\TestFile\图的广度优先遍历\g.txt
+E:\Code\LearnData\Graph\bin\Debug\netcoreapp3.1\TestFile\带权图\g.jpg
+E:\Code\LearnData\Graph\bin\Debug\netcoreapp3.1\TestFile\带权图\g.txt

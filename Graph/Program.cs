@@ -310,6 +310,30 @@ namespace Graph
 
             #endregion
 
+            #region 带权图
+
+            /*
+
+            IGraph adjDictionary = new AdjDictionary(@"./TestFile/带权图/g.txt");
+            Console.WriteLine(adjDictionary);
+
+            Console.WriteLine(adjDictionary.V());
+            Console.WriteLine(adjDictionary.E());
+            Console.WriteLine(adjDictionary.HasEdge(0, 1));
+            */
+
+            #endregion
+
+            #region Kruskal算法 -- 最小生成树
+
+            AdjDictionary adjDictionary = new AdjDictionary(@"./TestFile/带权图/g.txt");
+            Kruskal kruskal = new Kruskal(adjDictionary);
+
+            Console.WriteLine(kruskal.GetList());
+
+
+            #endregion
+
             Console.Read();
         }
     }
