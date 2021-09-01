@@ -36,6 +36,11 @@ namespace Graph
             return b;
         }
 
+        public int GetWeight()
+        {
+            return w;
+        }
+
         public override string ToString()
         {
             return string.Format($"{a}-{b} : {w}");

@@ -20,7 +20,7 @@ namespace Graph
      * 两个子集内的顶点不相邻。
      */
 
-    class Program     
+    class Program
     {
         /// <summary>
         /// 测试并查集效率方法
@@ -28,7 +28,7 @@ namespace Graph
         /// <param name="uf"></param>
         /// <param name="m"></param>
         /// <returns></returns>
-        private static long TestUF(IUF uf,int m)
+        private static long TestUF(IUF uf, int m)
         {
             int size = uf.GetSize();
             Random r = new Random();
@@ -325,12 +325,50 @@ namespace Graph
             #endregion
 
             #region Kruskal算法 -- 最小生成树
+            /*
 
             AdjDictionary adjDictionary = new AdjDictionary(@"./TestFile/带权图/g.txt");
             Kruskal kruskal = new Kruskal(adjDictionary);
 
             Console.WriteLine(kruskal.GetList());
 
+            */
+            #endregion
+
+            /* 切分定理
+             * 定义一：把图的结点分为两部分，称为一个切分(Cut)
+             * 定义二：如果一个边的两个端点，属于切分不同的两边，这个边称为横切边(Crossing Edge)
+             * 切分定理：给定任意切分，横切边中权值最小的边必然属于最小生成树
+             * 证明: 假如一条横切边他不是最短的，那么必然存在一条最短的边，连接两部分，否则这两部分不连通，无法构成生成树。
+             */
+
+            #region Prim算法 -- 最小生成树
+
+            /*
+
+            AdjDictionary adjDictionaryP = new AdjDictionary(@"./TestFile/带权图/g.txt");
+            Prim prim = new Prim(adjDictionaryP);
+
+            Console.WriteLine(prim.GetList());
+
+            */
+            #endregion
+
+            // 广度优先遍历只适用于无权图的最短路径求解
+
+            #region Dijkstra算法 -- 带权图的最短路径
+
+            /**/
+
+            AdjDictionary adjDictionaryD = new AdjDictionary(@"./TestFile/带权图最短路径/g.txt");
+            Dijkstra dijkstra = new Dijkstra(adjDictionaryD, 0);
+
+            for (int i = 0; i < adjDictionaryD.V(); i++)
+            {
+                Console.WriteLine($"顶点0与顶点{i}的带权最短路径:{dijkstra.DisTo(i)}");
+            }
+
+            Console.WriteLine($"顶点2与顶点0是否相连:{dijkstra.IsConnected(2)}");
 
             #endregion
 
